@@ -96,6 +96,7 @@ module.exports = [
         }, (err, profile) => {
           reply({
             token: profile.token,
+            deviceToken: profile.deviceToken,
             phone: profile.phone
           });
         });
