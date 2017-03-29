@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const uuid = require('uuid');
 
 module.exports = mongoose.Schema({
   registerDate: {
@@ -8,9 +7,9 @@ module.exports = mongoose.Schema({
   },
   token: {
     type: String,
-    required: true,
+    default: require('uuid').v4,
     unique: true,
-    default: uuid.v4
+    required: true
   },
   phone: {
     type: String

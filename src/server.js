@@ -53,6 +53,7 @@ module.exports = function (config) {
       if (error)
         return console.error(error);
       require('./lib/auth/user')(server);
+      server.route(debugRoutes(require('./lib/crudRoutes/user')));
       server.route(debugRoutes(require('./lib/routes/login')));
       server.route(debugRoutes(require('./lib/routes/deviceToken')));
       server.route(debugRoutes(require('./lib/routes/mySchedule')));
