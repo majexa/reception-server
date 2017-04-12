@@ -7,9 +7,6 @@ module.exports = function (server) {
       let request = this;
       request.db.User.findOne({
         token: token
-      }, {
-        _id: 1,
-        phone: 1,
       }).then((user) => {
         if (user) {
           return callback(null, true, user);

@@ -14,6 +14,12 @@ module.exports = mongoose.Schema({
   phone: {
     type: String
   },
+  address: {
+    type: String
+  },
+  geoPosition: {
+    type: String
+  },
   deviceToken: {
     type: String
   }

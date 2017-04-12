@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.15.3",
+    "clone-function": "^1.0.6",
     "colors": "^1.1.2",
     "dotenv": "^4.0.0",
     "good": "^7.1.0",
@@ -26,6 +27,7 @@
     "ngn-grid-hapi-mongoose-crud": "^1.0.0",
     "ngn-grid-items": "^1.0.0",
     "ngn-pagination": "0.0.5",
-    "uuid": "^3.0.1"
+    "uuid": "^3.0.1",
+    "xml2js": "^0.4.17"
   }
 }

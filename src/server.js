@@ -57,6 +57,8 @@ module.exports = function (config) {
       server.route(debugRoutes(require('./lib/routes/login')));
       server.route(debugRoutes(require('./lib/routes/deviceToken')));
       server.route(debugRoutes(require('./lib/routes/mySchedule')));
+      server.route(debugRoutes(require('./lib/routes/push')));
+      server.route(debugRoutes(require('./lib/routes/geolocation')));
       server.start((err) => {
         if (err)
           throw err;
