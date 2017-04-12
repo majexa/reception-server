@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.15.3",
-    "clone-function": "^1.0.6",
     "colors": "^1.1.2",
     "dotenv": "^4.0.0",
     "good": "^7.1.0",
